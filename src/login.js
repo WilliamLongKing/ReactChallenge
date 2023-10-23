@@ -15,18 +15,23 @@ const Login = (props) => {
         setAuthError("")
  
         if ("" === email) {
-            setAuthError("Please enter your username.")
+            setAuthError("Please enter your username (email).")
+            return
+        }
+
+        if (!/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(email)) {
+            setAuthError("Please enter a valid email")
             return
         }
 
         if ("" === password) {
-            setAuthError("Please enter a password.")
+            setAuthError("Please enter your password.")
             return
         }
 
         // for now, hard-coded values are used for login
         // TODO: verify credentials against user data from API
-        if (email !== "test" || password !== "test123!") {
+        if (email !== "test@gmail.com" || password !== "test123!") {
             setAuthError("Username or Password is incorrect.")
             return
         } else {
