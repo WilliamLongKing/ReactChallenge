@@ -5,3 +5,11 @@ The login page takes input for a username and password with validation (hard cod
 Login page of the site
 ![image](https://github.com/WilliamLongKing/ReactChallenge/assets/26048106/730d6248-a53a-4dbd-9da7-e6aa1e10b8c4)
 Welcome page of the site
+
+# Instructions
+To run the page, clone the repository and navigate to the root folder in the console. Run the command "npm start" to start the page, which will be available on localhost:3000 if possible. 
+The correct login credentials are:
+username: test@gmail.com
+password: test123!
+
+A means to navigate back to the login page was not specified, but the login page can be navigated back to using the browser back button. 
